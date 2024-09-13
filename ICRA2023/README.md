@@ -30,7 +30,7 @@ wstool init src https://raw.githubusercontent.com/ivalab/NavBench/master/ICRA202
 ```
 
 4. Satisfy package dependencies:
-- The following is a non-exhaustive list of python packages you will need: `numpy`, `matplotlib`, `scipy`, `skimage`
+- The following is a non-exhaustive list of python packages you will need: `numpy`, `matplotlib`, `scipy`, `scikit-image`
 - As a debugging aid, everything is known to work in an environment containing the packages listed in the included [`requirements.txt`](https://raw.githubusercontent.com/ivalab/NavBench/master/ICRA2023/requirements.txt) file. However, you should not need every package in the list nor necessarily the same exact versions.
 - Running the command `rosdep check --from-paths src -i -y` from the root of your workspace may help identify missing dependencies. I don't recommend using the related `install` command:
   - It only detects `apt` installed packages, so don't use if you prefer using `pip3`
@@ -43,6 +43,7 @@ catkin build
 6. Missing dependencies
 ```bash
 sudo apt install ros-noetic-octomap-msgs ros-noetic-tf2-sensor-msgs ros-noetic-octomap-ros libgoogle-glog-dev
+pip install scipy scikit-image matplotlib
 ```
 _Install missing dependencies as needed_
 
