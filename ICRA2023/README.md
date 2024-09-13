@@ -40,6 +40,10 @@ wstool init src https://raw.githubusercontent.com/ivalab/NavBench/master/ICRA202
 ```
 catkin build
 ```
+6. Missing dependencies
+```bash
+sudo apt install ros-noetic-octomap-msgs ros-noetic-tf2-sensor-msgs ros-noetic-octomap-ros libgoogle-glog-dev
+```
 _Install missing dependencies as needed_
 
 
